@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia E-commerce | Dashboard Admin</title>
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Aside -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Logo Image" />
+                    <h2>SO<span class="danger">PHIA</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Beranda</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Pelanggan</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt</span>
+                    <h3>Pesanan</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analisis</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Pesan</h3>
+                    <span class="message-count">99+</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produk</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">assignment</span>
+                    <h3>Laporan</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Pengaturan</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Tambah Produk</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Keluar</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Main Content -->
+        <main>
+            <h1>Beranda</h1>
+            <div class="date">
+                <input type="date" />
+            </div>
+            <!-- Start Insights -->
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">assessment</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Penjualan</h3>
+                            <h1>Rp10.926.800</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                            <div class="number">
+                                <p>85%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 jam terakhir</small>
+                </div>
+                <div class="expense">
+                    <span class="material-icons-sharp">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Penghasilan</h3>
+                            <h1>Rp4.897.300</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                            <div class="number">
+                                <p>57%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 jam terakhir</small>
+                </div>
+                <div class="income">
+                    <span class="material-icons-sharp">legend_toggle</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Pendapatan</h3>
+                            <h1>Rp19.186.900</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                            <div class="number">
+                                <p>94%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 jam terakhir</small>
+                </div>
+            </div>
+            <!-- End Insights -->
+
+            <!-- Start Order -->
+            <div class="recent-order">
+                <h2>Pesanan Terbaru</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama Produk</th>
+                            <th>Kode Produk</th>
+                            <th>Pembayaran</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Xiaomi Redmi Note 11 Pro 5G</td>
+                            <td>9804</td>
+                            <td>Rp4.840.000</td>
+                            <td class="primary">Diproses</td>
+                            <td class="primary">Detail</td>
+                        </tr>
+                        <tr>
+                            <td>iPad Pro 2021</td>
+                            <td>8374</td>
+                            <td>Rp12.175.000</td>
+                            <td class="primary">Diproses</td>
+                            <td class="primary">Detail</td>
+                        </tr>
+                        <tr>
+                            <td>Harddisk External Seagate 2TB</td>
+                            <td>4263</td>
+                            <td>Rp1.100.000</td>
+                            <td class="warning">Ditunda</td>
+                            <td class="primary">Detail</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone SE 2021</td>
+                            <td>8723</td>
+                            <td>Rp6.500.000</td>
+                            <td class="success">Terkirim</td>
+                            <td class="primary">Detail</td>
+                        </tr>
+                        <tr>
+                            <td>Motherboard Gigabyte Aorus B450M</td>
+                            <td>1725</td>
+                            <td>Rp2.250.000</td>
+                            <td class="danger">Dibatalkan</td>
+                            <td class="primary">Detail</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Lihat Semua</a>
+            </div>
+            <!-- End Order -->
+        </main>
+        <!-- End Main Content -->
+
+        <!-- Start Right Content -->
+        <div class="right">
+            <!-- Start Top -->
+            <div class="top">
+                <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, <b>Thomas Tuchel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./img/profile1.png" alt="Profile Photo" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Top -->
+
+            <!-- Start Recent Updates -->
+            <div class="recent-updates">
+                <h2>Aktivitas Terbaru</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile2.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Edouard Mendy</b> menerima pesanan Xiaomi POCO M4 Pro 5G.
+                            </p>
+                            <small class="text-muted">2 jam yang lalu</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile3.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Antonio Rudiger</b> membatalkan pesanan iPhone 13 Pro Max.
+                            </p>
+                            <small class="text-muted">3 jam yang lalu</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile4.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Thiago Silva</b> menerima pesanan Samsung Galaxy S22 Ultra 5G.
+                            </p>
+                            <small class="text-muted">5 jam yang lalu</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile5.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Cesar Azpilicueta</b> menerima pesanan Corsair Vengeance DDR4 RAM 4GB 3200MHz.
+                            </p>
+                            <small class="text-muted">7 jam yang lalu</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile6.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Marcos Alonso</b> membatalkan pesanan Sandisk Dual OTG 32GB.
+                            </p>
+                            <small class="text-muted">8 jam yang lalu</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/profile7.png" alt="Profile Photo" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Mateo Kovacic</b> menerima pesanan Cooler Master Power Supply Pro 550W.
+                            </p>
+                            <small class="text-muted">10 jam yang lalu</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Recent Updates -->
+            <div class="sales-analytics">
+                <h2>Analisis Penjualan</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pesanan Online</h3>
+                            <small class="text-muted">24 jam terakhir</small>
+                        </div>
+                        <h5 class="success">+49%</h5>
+                        <h3>432</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">store</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pesanan Offline</h3>
+                            <small class="text-muted">24 jam terakhir</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>102</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">people</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pelanggan Baru</h3>
+                            <small class="text-muted">24 jam terakhir</small>
+                        </div>
+                        <h5 class="success">+21%</h5>
+                        <h3>1027</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Tambah Produk</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Right Content -->
+    </div>
+    <script src="./index.js"></script>
+    <script src="./orders.js"></script>
+</body>
+
+</html>
